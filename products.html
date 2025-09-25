@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - VitaBot AI Supplements</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" href="images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/icons/logo.png" alt="VitaBot AI" class="logo-img">
+                <div class="logo-text">Vita<span>Bot</span></div>
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="compliance.html">Compliance</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="cart-icon-container">
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart cart-icon"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+                <a href="contact.html" class="user-icon"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Premium Supplements</h1>
+            <p>Discover our complete range of AI-recommended health supplements</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-full">
+        <div class="container">
+            <div class="products-filter">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="immune">Immune Support</button>
+                <button class="filter-btn" data-filter="bone">Bone Health</button>
+                <button class="filter-btn" data-filter="superfood">Superfood</button>
+                <button class="filter-btn" data-filter="stress">Stress Relief</button>
+                <button class="filter-btn" data-filter="detox">Detox</button>
+                <button class="filter-btn" data-filter="joint">Joint Support</button>
+                <button class="filter-btn" data-filter="daily">Daily Health</button>
+            </div>
+            
+            <div class="products-search">
+                <input type="text" placeholder="Search products..." id="product-search">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="products-grid-full">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="immune">
+                    <div class="product-image">
+                        <img src="images/products/seamoss.jpg" alt="Organic Sea Moss">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Immune Support</div>
+                        <h3 class="product-title">Organic Sea Moss</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(128)</span>
+                        </div>
+                        <div class="product-price">R 249.99</div>
+                        <p class="product-description">Rich in minerals and vitamins, supports immune system and digestive health.</p>
+                        <button class="add-to-cart" data-id="1" data-name="Organic Sea Moss" data-price="249.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card" data-category="bone">
+                    <div class="product-image">
+                        <img src="images/products/calmag.jpg" alt="Calcium Magnesium">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Bone Health</div>
+                        <h3 class="product-title">Calcium Magnesium</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(95)</span>
+                        </div>
+                        <div class="product-price">R 189.99</div>
+                        <p class="product-description">Essential minerals for bone strength, muscle function, and nerve transmission.</p>
+                        <button class="add-to-cart" data-id="2" data-name="Calcium Magnesium" data-price="189.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card" data-category="superfood">
+                    <div class="product-image">
+                        <img src="images/products/moringa.jpg" alt="Moringa Powder">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Superfood</div>
+                        <h3 class="product-title">Moringa Powder</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="rating-count">(87)</span>
+                        </div>
+                        <div class="product-price">R 179.99</div>
+                        <p class="product-description">Nutrient-dense superfood packed with antioxidants, vitamins, and minerals.</p>
+                        <button class="add-to-cart" data-id="3" data-name="Moringa Powder" data-price="179.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card" data-category="stress">
+                    <div class="product-image">
+                        <img src="images/products/rhodiola.jpg" alt="Rhodiola Extract">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Stress Relief</div>
+                        <h3 class="product-title">Rhodiola Extract</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(73)</span>
+                        </div>
+                        <div class="product-price">R 299.99</div>
+                        <p class="product-description">Adaptogenic herb that helps the body resist physical and mental stress.</p>
+                        <button class="add-to-cart" data-id="4" data-name="Rhodiola Extract" data-price="299.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card" data-category="detox">
+                    <div class="product-image">
+                        <img src="images/products/charcoal.jpg" alt="Activated Charcoal">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Detox</div>
+                        <h3 class="product-title">Activated Charcoal</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="rating-count">(64)</span>
+                        </div>
+                        <div class="product-price">R 159.99</div>
+                        <p class="product-description">Natural detoxifier that helps remove toxins and promote digestive health.</p>
+                        <button class="add-to-cart" data-id="5" data-name="Activated Charcoal" data-price="159.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card" data-category="joint">
+                    <div class="product-image">
+                        <img src="images/products/glucosamine-hcl.jpg" alt="Glucosamine HCL">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Joint Support</div>
+                        <h3 class="product-title">Glucosamine HCL</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(142)</span>
+                        </div>
+                        <div class="product-price">R 349.99</div>
+                        <p class="product-description">Supports joint health, cartilage formation, and overall mobility.</p>
+                        <button class="add-to-cart" data-id="6" data-name="Glucosamine HCL" data-price="349.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 7 -->
+                <div class="product-card" data-category="daily">
+                    <div class="product-image">
+                        <img src="images/products/multivitamin.jpg" alt="Multi-Vitamin Complex">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Daily Health</div>
+                        <h3 class="product-title">Multi-Vitamin Complex</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(156)</span>
+                        </div>
+                        <div class="product-price">R 279.99</div>
+                        <p class="product-description">Comprehensive blend of essential vitamins and minerals for daily wellness.</p>
+                        <button class="add-to-cart" data-id="7" data-name="Multi-Vitamin Complex" data-price="279.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 8 -->
+                <div class="product-card" data-category="joint">
+                    <div class="product-image">
+                        <img src="images/products/glucosamine-msm.jpg" alt="Glucosamine MSM">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Joint Support</div>
+                        <h3 class="product-title">Glucosamine MSM</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="rating-count">(89)</span>
+                        </div>
+                        <div class="product-price">R 379.99</div>
+                        <p class="product-description">Enhanced formula with MSM for superior joint comfort and flexibility.</p>
+                        <button class="add-to-cart" data-id="8" data-name="Glucosamine MSM" data-price="379.99">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Recommendation Section -->
+    <section class="ai-recommendation">
+        <div class="container">
+            <div class="recommendation-content">
+                <div class="recommendation-text">
+                    <h2>Not Sure What You Need?</h2>
+                    <p>Our AI system can analyze your health goals and recommend the perfect supplements for you.</p>
+                    <button class="btn" id="ai-recommendation-btn">Get AI Recommendation</button>
+                </div>
+                <div class="recommendation-image">
+                    <i class="fas fa-robot"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Assistant -->
+    <div class="ai-assistant">
+        <div class="ai-chat">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <i class="fas fa-robot"></i>
+                    <span>VitaBot Assistant</span>
+                </div>
+                <button class="close-chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-messages">
+                <div class="message bot-message">
+                    Hello! I'm VitaBot, your AI health supplement assistant. How can I help you today?
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button class="send-message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+        <div class="ai-toggle">
+            <i class="fas fa-robot"></i>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>VitaBot AI</h3>
+                    <p>Premium health supplements powered by artificial intelligence for a personalized wellness experience.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="compliance.html">Compliance</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="compliance.html#shipping">Shipping Info</a></li>
+                        <li><a href="compliance.html#returns">Returns & Refunds</a></li>
+                        <li><a href="contact.html#faq">FAQ</a></li>
+                        <li><a href="compliance.html#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Johannesburg, South Africa</li>
+                        <li><i class="fas fa-phone"></i> +27 11 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@vitabot.ai</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9:00-17:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 VitaBot AI. All rights reserved. | Compliant with South Africa, Namibia, Botswana regulations</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/ai-chatbot.js"></script>
+    <script src="js/product-filter.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
